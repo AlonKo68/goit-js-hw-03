@@ -49,7 +49,7 @@
 
 
 
-// Задача 3. Фільтрація масиву чисел
+                // Задача M3 - 3: Фільтрація масиву чисел
 
 // Напиши функцію filterArray(numbers, value), яка приймає масив чисел (numbers) 
 // та значення(value) як параметри. Функція повинна повертати новий масив лише тих чисел 
@@ -62,22 +62,17 @@
 // Поверни свій новий масив з підходящими числами як результат.
 
 function filterArray(numbers, value) {
-    console.log(numbers);
     const newArray = [];
+    // console.log(numbers);
     for (let i = 0;  i < numbers.length; i += 1) {
-        console.log(numbers[i]);
+        // console.log(numbers[i]);
         if (numbers[i] > value) {
-            console.log(newArray);
+            numbers.includes(numbers[i, i + 1]);
+            // console.log(numbers[i]);
+            newArray.push(numbers[i]);
         }
-    //     if ( numbers.includes(numbers[i], i + 1) > value) {
-    //       console.log(newArray);
-    //         // newArray = numbers.splice(i, 1);
-    //         // newArray.push(numbers[i]);
-            
-    //     }
-
-    }
-    // return newArray;
+    }   
+    return newArray;
 
     
 }
