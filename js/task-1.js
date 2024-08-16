@@ -1,7 +1,7 @@
+
 function slugify(title) {
     const slug = title.toLowerCase().split(' ').join('-');
     return `"${slug}"`;
-    // return `"${slug.replaceAll(" ", "-")}"`
 }
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
 console.log(slugify("English for developer")); // "english-for-developer"
